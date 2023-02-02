@@ -1,0 +1,18 @@
+{
+  "name": "OnlyFans",
+  "version": "1.0.0",
+  "description": "Download OnlyFans media",
+  "manifest_version": 1,
+  "author": "Zoetropes",
+  "icons": {
+    "32": "res/of-32x32.png",
+    "180": "res/of-180x180.png",
+    "192": "res/of-192x192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://onlyfans.com/*", "https://*.onlyfans.com/*"],
+      "js": ["bin/onlyfans.js"]
+    }
+  ]
+}
